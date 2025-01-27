@@ -2,3 +2,24 @@
 ---
 
 @import "jekyll-theme-slate";
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: white;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: inherit;
+  }

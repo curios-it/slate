@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{{ content }}
+
+<h1>Latest Posts</h1>
+<ul style="list-style:none">
+{% for post in site.posts %}
+<li>
+    <a href="{{ post.url | absolute_url }}"><h3>{{ post.title }}</h3></a>
+    <p class="view">by {{ post.author | default: site.author }} on {{ post.date | date: "%-d %B %Y" }}</p>
+    <p>{{ post.excerpt }}</p>
+</li>
+{% endfor %}
+</ul>
